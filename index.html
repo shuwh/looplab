@@ -19,9 +19,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Bootstrap Theme</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      id="main-nav"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand">LoopLAB</a>
         <button
@@ -137,7 +140,7 @@
     </header>
 
     <!-- Explore Head -->
-    <section class="explore-head-section">
+    <section id="explore-head-section">
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -147,7 +150,7 @@
               maxime asperiores et deleniti! Est deleniti, quas quam sunt
               placeat vitae?
             </p>
-            <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+            <a href="#" class="btn btn-outline-light">Find Out More</a>
           </div>
         </div>
       </div>
@@ -194,6 +197,176 @@
       </div>
     </section>
 
+    <!-- Create Head Section -->
+    <section id="create-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Create</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est fuga
+              laborum modi natus voluptas ea suscipit, minus soluta magnam
+              repellendus. Rerum, odio saepe. Ipsam, iusto.
+            </p>
+            <a href="#" class="btn btn-outline-light">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Create Section -->
+    <section id="create-section" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-2">
+            <img
+              src="/img/create-section1.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-3"
+            />
+          </div>
+          <div class="col-md-6 order-1">
+            <h3>Create Your Own Passion</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              soluta necessitatibus numquam velit ducimus voluptatem fuga?
+              Ratione dignissimos voluptas eaque!
+            </p>
+            <div class="d-flex">
+              <div class="align-self-start p-4">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="align-self-end p-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Assumenda quod voluptatibus minima corrupti, nulla reiciendis
+                sunt. Reiciendis nostrum aliquid quaerat.
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="align-self-start p-4">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="align-self-end p-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Assumenda quod voluptatibus minima corrupti, nulla reiciendis
+                sunt. Reiciendis nostrum aliquid quaerat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Head -->
+    <section id="share-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">Share</h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              maxime asperiores et deleniti! Est deleniti, quas quam sunt
+              placeat vitae?
+            </p>
+            <a href="#" class="btn btn-outline-light">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Section -->
+    <section id="share-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="img/share-section1.jpg"
+              alt=""
+              class="img-fluid rounded-circle mb-3"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Share Your Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+              itaque alias quaerat illo vel eos quis pariatur. Consequatur,
+              molestias maxime.
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Suscipit maxime, veniam rem quae perferendis aspernatur.
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Suscipit maxime, veniam rem quae perferendis aspernatur.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>LoopLAB</h3>
+            <p>Copyright &copy; <span id="year"></span></p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#contactModal"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">message</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -212,6 +385,27 @@
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      // Init Scrollspy
+      $("body").scrollspy({ target: "#main-nav" });
+
+      //Smooth Scrolling
+      $("#main-nav a").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            500,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
     </script>
   </body>
 </html>
